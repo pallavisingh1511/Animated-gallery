@@ -3,38 +3,32 @@
 <head>
     <title>HTML5 Photo Gallery</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen"/>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav id="navbar">
-                <!--<a href="#">All Items</a>
-                <a href="#">Blue Items</a>
-                <a href="#">Green Items</a>
-                <a href="#">Orange Items</a>
-                <a href="#">Red Items</a>
-                <a href="#">Fruit</a>
-                <a href="#">Flower</a>
-                <a href="#">Toy</a> -->
-            </nav>
+            <nav id="navbar"></nav>
         </div>
     </header>
     
     <section id="main">
         <div class="container">
             <ul id="gallery">
-                <li data-tags = "Blue, Toy"><img src="images/blue1.jpg"></li>
-                <li data-tags = "Blue, Toy"><img src="images/blue2.jpg"></li>
-                <li data-tags = "Blue, Flower"><img src="images/blue3.jpg"></li>
-                <li data-tags = "Red, Fruit"><img src="images/red1.jpg"></li>
-                <li data-tags = "Green, Fruit"><img src="images/green1.jpg"></li>
-                <li data-tags = "Orange, Toy"><img src="images/orange3.jpg"></li>
-                <li data-tags = "Orange, Toy"><img src="images/orange2.jpg"></li>
-                <li data-tags = "Red, Fruit"><img src="images/red2.jpg"></li>
-                <li data-tags = "Green, Fruit"><img src="images/green3.jpg"></li>
-                <li data-tags = "Orange, Fruit"><img src="images/orange1.jpg"></li>
-                <li data-tags = "Red, Fruit"><img src="images/red3.jpg"></li>
-                <li data-tags = "Green, Fruit"><img src="images/green2.jpg"></li>
+                <li data-tags = "Blue, Toy"><a class="fancybox" rel= "group" href="images/blue1.jpg"><img src="images/blue1.jpg"></a></li>
+                <li data-tags = "Blue, Toy"><a class="fancybox" rel= "group" href="images/blue2.jpg"><img src="images/blue2.jpg"></a></li>
+                <li data-tags = "Blue, Flower"><a class="fancybox" rel= "group" href="images/blue3.jpg"><img src="images/blue3.jpg"></a></li>
+                <li data-tags = "Red, Fruit"><a class="fancybox" rel= "group" href="images/red1.jpg"><img src="images/red1.jpg"></a></li>
+                <li data-tags = "Green, Fruit"><a class="fancybox" rel= "group" href="images/green1.jpg"><img src="images/green1.jpg"></a></li>
+                <li data-tags = "Orange, Toy"><a class="fancybox" rel= "group" href="images/orange3.jpg"><img src="images/orange3.jpg"></a></li>
+                <li data-tags = "Orange, Toy"><a class="fancybox" rel= "group" href="images/orange2.jpg"><img src="images/orange2.jpg"></a></li>
+                <li data-tags = "Red, Fruit"><a class="fancybox" rel= "group" href="images/red2.jpg"><img src="images/red2.jpg"></a></li>
+                <li data-tags = "Green, Fruit"><a class="fancybox" rel= "group" href="images/green3.jpg"><img src="images/green3.jpg"></a></li>
+                <li data-tags = "Orange, Fruit"><a class="fancybox" rel= "group" href="images/orange1.jpg"><img src="images/orange1.jpg"></a></li>
+                <li data-tags = "Red, Fruit"><a class="fancybox" rel= "group" href="images/red3.jpg"><img src="images/red3.jpg"></a></li>
+                <li data-tags = "Green, Fruit"><a class="fancybox" rel= "group" href="images/green2.jpg"><img src="images/green2.jpg"></a></li>
             </ul>
         </div>
         <hr>
@@ -48,7 +42,22 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <!-- Include JQuery-quicksand -->
     <script src="js/jquery-quicksand.js"></script>
+    <!-- Include fancybox js -->
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-buttons.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox-thumbs.js"></script>
+    
     <!-- Include Custom JS -->
     <script src="js/script.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox();
+        });
+        
+    </script>
+    
+    
 </body>
 </html>
