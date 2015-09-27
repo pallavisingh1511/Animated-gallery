@@ -1,0 +1,23 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
+body{
+    color: #fcfcfc;
+    font: 14px 'Segge UI', Arial, sans-serif;
+    background: #ccc;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: #54a6de;
+}
+
+/* Custom Styling */
+.container{
+
+}
